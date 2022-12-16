@@ -20,7 +20,7 @@ Shader "My/SurfaceShader/UV_Starter"
 
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
-            fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
+            fixed4 c = tex2D (_MainTex, IN.uv_MainTex + 0.1);
             o.Albedo = c.rgb;
             //o.Emission = IN.uv_MainTex.x;
             //o.Emission = IN.uv_MainTex.y;

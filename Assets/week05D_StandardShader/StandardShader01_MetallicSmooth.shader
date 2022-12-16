@@ -3,7 +3,7 @@ Shader "My/SurfaceShader/StandardShader_MetalicSmoothness"
     Properties
     {
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
-        _Metallic ("Metalic", Range(0, 1)) = 0
+        _Metallic ("Metalic", Range(0, 1)) = 0.5
         _Glossiness ("Smoothness", Range(0, 1)) = 0.5
     }
     SubShader
